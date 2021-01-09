@@ -4,3 +4,5 @@ PROJECT UNTUK UAS KECERDASAN BUATAN
 ## Nama		: M. Febriyan
 ## NIM		: 171011401722
 ## Kelas	: 07TPLE003
+
+Febriyan gans
