@@ -25,7 +25,7 @@ class data():
 # function to read in data from the .csv files
 ##################################################
 def read_data(dataset, datafile, datatypes):
-    print "Reading data..."
+    print "Membaca data..."
     f = open(datafile)
     original_file = f.read()
     rowsplit_data = original_file.splitlines()
@@ -44,7 +44,7 @@ def read_data(dataset, datafile, datatypes):
 # Preprocess dataset
 ##################################################
 def preprocess2(dataset):
-    print "Preprocessing data..."
+    print "Melakukan preprocessing data..."
 
     class_values = [example[dataset.class_index] for example in dataset.examples]
     class_mode = Counter(class_values)
@@ -365,7 +365,7 @@ def print_tree(node):
     if (node.is_leaf == True):
         for x in range(node.height):
             print "\t",
-        print "Classification: " + str(node.classification)
+        print "Klasifikasi:: " + str(node.classification)
         return
     for x in range(node.height):
             print "\t",
@@ -441,7 +441,7 @@ def main():
             print "\n"
         if ("-v" in args):
             datavalidate = args[args.index("-v") + 1]
-            print "Validating tree..."
+            print "Melakukan validasi tree..."
 
             validateset = data(classifier)
             read_data(validateset, datavalidate, datatypes)
